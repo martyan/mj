@@ -1,0 +1,61 @@
+$blue: #1e88e5;
+$red: indianred;
+$purple: #9c27B0;
+$orange: #f0b82e;
+
+$primary: #4d9d8f;
+$primary_dark: #33635d;
+$primary_light: #cae2de;
+$secondary: $orange;
+$primary_hover: $secondary;
+
+$mobile: 480px;
+$tablet: 640px;
+$desktop: 920px;
+
+$facebook: #3b5998;
+$google: #ea4335;
+
+@mixin gradient($swatch) {
+
+    @if $swatch == "green" {
+        $color1: #278577;
+        $color2: #169f8b;
+        $color3: #60d4c1;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 50%, $color3 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color3',GradientType=1);
+    } @else if $swatch == "green-inverse" {
+        $color1: #60d4c1;
+        $color2: #169f8b;
+        $color3: #278577;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 50%, $color3 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color3',GradientType=1);
+    } @else if $swatch == "dark" {
+        $color1: #333333;
+        $color2: #555555;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2',GradientType=1);
+    } @else if $swatch == "dark-inverse" {
+        $color1: #555555;
+        $color2: #333333;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2',GradientType=1);
+    } @else if $swatch == "bright" {
+        $color1: #aaaaaa;
+        $color2: #ffffff;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2',GradientType=1);
+    } @else if $swatch == "bright-inverse" {
+        $color1: #ffffff;
+        $color2: #aaaaaa;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2',GradientType=1);
+    }
+
+}

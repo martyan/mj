@@ -10,15 +10,21 @@
         "gatsby-plugin-manifest": "^2.0.19",
         "gatsby-plugin-offline": "^2.0.24",
         "gatsby-plugin-react-helmet": "^3.0.7",
+        "gatsby-plugin-sass": "^2.0.10",
         "gatsby-plugin-sharp": "^2.0.22",
         "gatsby-source-filesystem": "^2.0.23",
         "gatsby-transformer-sharp": "^2.1.14",
+        "node-sass": "^4.11.0",
+        "normalize.css": "^8.0.1",
         "prop-types": "^15.7.2",
         "react": "^16.8.3",
+        "react-customizable-progressbar": "^0.1.11",
         "react-dom": "^16.8.3",
-        "react-helmet": "^5.2.0"
+        "react-helmet": "^5.2.0",
+        "react-text-loop": "^2.0.1"
     },
     "devDependencies": {
+        "gh-pages": "^2.0.1",
         "prettier": "^1.16.4"
     },
     "keywords": [
@@ -31,7 +37,8 @@
         "format": "prettier --write src/**/*.{js,jsx}",
         "start": "npm run develop",
         "serve": "gatsby serve",
-        "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+        "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "repository": {
         "type": "git",

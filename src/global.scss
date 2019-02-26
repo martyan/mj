@@ -1,0 +1,21 @@
+@import '~normalize.css/normalize.css';
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Muli|Roboto:300,400,500|Roboto+Slab:300,400,700');
+
+html, body {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+::selection {
+    background: #333; /* WebKit/Blink Browsers */
+}
+
+button {
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}

@@ -1,21 +1,38 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import TextLoop from 'react-text-loop'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
+import './index.scss'
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-            <Image />
-        </div>
-        <Link to="/page-2/">Go to page 2</Link>
+
+        <section className="intro">
+            <h1>Hey! I'm front-end developer currently living in Zlin, Czech republic.</h1>
+            <h2>
+                <span>My favorite stack consists of </span>
+                <TextLoop
+                    adjustingSpeed={250}
+                    springConfig={{ stiffness: 180 }}
+                    children={['React + Redux', 'HTML5 + CSS3', 'SASS', 'Babel', 'Webpack', 'REST API']}
+                    className="stack"
+                />
+                <span>.</span>
+            </h2>
+        </section>
+
+        <section>
+            <Link to="/page-2">react-customizable-progressbar</Link>
+            <div>linkedin - kontakt me</div>
+            <div>github.com/martyan</div>
+            <div>entrydo mobile</div>
+        </section>
     </Layout>
 )
 
 export default IndexPage
+
+
