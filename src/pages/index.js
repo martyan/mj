@@ -106,9 +106,14 @@ const IndexPage = () => (
 
         <Fade bottom>
             <section className="entrydo">
-                <div className="logo">
+                <a
+                    className="logo"
+                    href="https://entry.do"
+                    target="_blank"
+                    onClick={() => ReactGA.event({category: 'User', action: 'Clicked on Entrydo'})}
+                >
                     <img src={entrydoLogo} alt="Entrydo" />
-                </div>
+                </a>
                 <div className="desc">
                     <p>
                         <b>Entry management system</b><span className="mobile"><br /></span>{' '}
