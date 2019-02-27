@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import logo from '../images/mj.svg'
 import './layout.scss'
 
 const Layout = ({ children }) => (
@@ -18,15 +18,10 @@ const Layout = ({ children }) => (
         `}
         render={data => (
             <>
-                <div className="layout">
-                    <Header siteTitle={data.site.siteMetadata.title} />
-                    <main>{children}</main>
-                    <footer>
-                        © {new Date().getFullYear()}, Built with
-                        {` `}
-                        <a href="https://www.gatsbyjs.org">Gatsby</a>
-                    </footer>
-                </div>
+                <main>{children}</main>
+                <footer>
+                    <a href="/" className="logo"><img src={logo} alt="mj" /></a>
+                </footer>
             </>
         )}
     />
