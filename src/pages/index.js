@@ -97,7 +97,7 @@ const IndexPage = () => (
                                 href="https://github.com/martyan/react-circle-progressbar"
                                 target="_blank"
                                 onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar'})}
-                            >react-customizable-progressbar</a>
+                            >react-circle-progressbar</a>
                         </p>
                     </div>
                 </div>
