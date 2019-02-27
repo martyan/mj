@@ -57,24 +57,23 @@ const IndexPage = () => (
         </section>
 
         <section className="footer">
-            <div className="container">
-                <div className="get-in-touch">
-                    <div className="text">If you want to get in touch or just say hi please send me a message on my</div>
-                    <button className="cta">
-                        <a href="https://www.linkedin.com/in/mjuzl/" target="_blank">
-                            <i className="fa fa-linkedin"></i> Linked-in profile
-                        </a>
-                    </button>
+            <div className="get-in-touch">
+                <div className="text">If you want to get in touch or just say Hi please send me a message on my</div>
+                <button className="cta">
+                    <a href="https://www.linkedin.com/in/mjuzl/" target="_blank">
+                        <i className="fa fa-linkedin"></i> Linked-in profile
+                    </a>
+                </button>
+            </div>
+
+            <div className="epilogue">
+                <div className="board">
+                    <img src={surfImg} alt="Surf"/>
                 </div>
 
-                <div className="epilogue">
-                    <div className="board">
-                        <img src={surfImg} alt="Surf"/>
-                    </div>
-
-                    <div className="author">
-                        Coded by <a href="/" className="mj"><img src={logo} alt="mj" /></a> - see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested
-                    </div>
+                <div className="author">
+                    <p>Coded by <a href="/" className="mj"><img src={logo} alt="mj" /></a></p>
+                    <p className="code">see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested</p>
                 </div>
             </div>
         </section>
