@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Fade from 'react-reveal/Fade'
 import TextLoop from 'react-text-loop'
 
 import Layout from '../components/layout'
@@ -21,62 +22,70 @@ const IndexPage = () => (
             </div>
         </section>
 
-        <section className="stack">
-            <h2>
-                <span>My favorite stack consists of </span>
-                <TextLoop
-                    interval={2000}
-                    adjustingSpeed={250}
-                    springConfig={{ stiffness: 180 }}
-                    children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
-                    className="loop"
-                />
-                <span>.</span>
-            </h2>
-        </section>
+        <Fade bottom>
+            <section className="stack">
+                <h2>
+                    <span>My favorite stack consists of </span>
+                    <TextLoop
+                        interval={2000}
+                        adjustingSpeed={250}
+                        springConfig={{ stiffness: 180 }}
+                        children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
+                        className="loop"
+                    />
+                    <span>.</span>
+                </h2>
+            </section>
+        </Fade>
 
-        <section className="open-source">
-            <div className="inner">
+        <Fade bottom>
+            <section className="open-source">
+                <div className="inner">
+                    <div className="logo">
+                        <img src={githubLogo} alt="GitHub" />
+                    </div>
+                    <div className="desc">
+                        <h2><a href="https://github.com/martyan" target="_blank">github.com/<b>martyan</b></a></h2>
+                        <p>Check <b>Examples</b> or play around with <b>generator</b> of <b>react-customizable-progressbar</b></p>
+                    </div>
+                </div>
+            </section>
+        </Fade>
+
+        <Fade bottom>
+            <section className="entrydo">
                 <div className="logo">
-                    <img src={githubLogo} alt="GitHub" />
+                    <img src={entrydoLogo} alt="Entrydo" />
                 </div>
                 <div className="desc">
-                    <h2><a href="https://github.com/martyan" target="_blank">github.com/<b>martyan</b></a></h2>
-                    <p>Check <b>Examples</b> or play around with <b>generator</b> of <b>react-customizable-progressbar</b></p>
+                    <p><b>Entry management system</b> for <b>smooth check-in</b> experience at <b>your event</b>.</p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Fade>
 
-        <section className="entrydo">
-            <div className="logo">
-                <img src={entrydoLogo} alt="Entrydo" />
-            </div>
-            <div className="desc">
-                <p><b>Entry management system</b> for <b>smooth check-in</b> experience at <b>your event</b>.</p>
-            </div>
-        </section>
-
-        <section className="footer">
-            <div className="get-in-touch">
-                <div className="text">If you want to get in touch or just say Hi please send me a message on my</div>
-                <button className="cta">
-                    <a href="https://www.linkedin.com/in/mjuzl/" target="_blank">
-                        <i className="fa fa-linkedin"></i> Linked-in profile
-                    </a>
-                </button>
-            </div>
-
-            <div className="epilogue">
-                <div className="board">
-                    <img src={surfImg} alt="Surf"/>
+        <Fade bottom>
+            <section className="footer">
+                <div className="get-in-touch">
+                    <div className="text">If you want to get in touch or just say Hi please send me a message on my</div>
+                    <button className="cta">
+                        <a href="https://www.linkedin.com/in/mjuzl/" target="_blank">
+                            <i className="fa fa-linkedin"></i> Linked-in profile
+                        </a>
+                    </button>
                 </div>
 
-                <div className="author">
-                    <p>Coded by <a href="/" className="mj"><img src={logo} alt="mj" /></a></p>
-                    <p className="code">see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested</p>
+                <div className="epilogue">
+                    <div className="board">
+                        <img src={surfImg} alt="Surf"/>
+                    </div>
+
+                    <div className="author">
+                        <p>Coded by <a href="/" className="mj"><img src={logo} alt="mj" /></a></p>
+                        <p className="code">see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Fade>
     </Layout>
 )
 
