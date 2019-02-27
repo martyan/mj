@@ -57,14 +57,26 @@ const IndexPage = () => (
         </section>
 
         <section className="footer">
-            <div>If you want to get in touch or just say hi please send me a message on <i className="fa fa-linkedin"></i> Linked-in</div>
-            <div>Check source code of this page</div>
+            <div className="container">
+                <div className="get-in-touch">
+                    <div className="text">If you want to get in touch or just say hi please send me a message on my</div>
+                    <button className="cta">
+                        <a href="https://www.linkedin.com/in/mjuzl/" target="_blank">
+                            <i className="fa fa-linkedin"></i> Linked-in profile
+                        </a>
+                    </button>
+                </div>
 
-            <div className="board">
-                <img src={surfImg} alt="Surf"/>
+                <div className="epilogue">
+                    <div className="board">
+                        <img src={surfImg} alt="Surf"/>
+                    </div>
+
+                    <div className="author">
+                        Coded by <a href="/" className="mj"><img src={logo} alt="mj" /></a> - see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested
+                    </div>
+                </div>
             </div>
-
-            <a href="/" className="mj"><img src={logo} alt="mj" /></a>
         </section>
     </Layout>
 )
