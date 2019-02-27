@@ -8,9 +8,17 @@ import SEO from '../components/seo'
 
 import githubLogo from '../images/github.svg'
 import entrydoLogo from '../images/entrydo.svg'
+import reactLogo from '../images/react.svg'
+import reduxLogo from '../images/redux.svg'
+import htmlLogo from '../images/html.svg'
+import cssLogo from '../images/css.svg'
+import sassLogo from '../images/sass.svg'
+import webpackLogo from '../images/webpack.svg'
+import babelLogo from '../images/babel.svg'
+
 import surfImg from '../images/surf.svg'
+import mj from '../images/mj.svg'
 import './index.scss'
-import logo from '../images/mj.svg'
 
 const IndexPage = () => (
     <Layout>
@@ -24,16 +32,26 @@ const IndexPage = () => (
 
         <Fade bottom>
             <section className="stack">
-                <h2>
-                    <span>My favorite stack consists of </span>
+                <h2 className="text">
+                    <span>My favorite stack consists of</span>
                     <TextLoop
-                        interval={2000}
-                        adjustingSpeed={250}
-                        springConfig={{ stiffness: 180 }}
-                        children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
+                        interval={2500}
+                        springConfig={{ stiffness: 90 }}
                         className="loop"
+                        children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
                     />
-                    <span>.</span>
+                </h2>
+                <h2 className="logos">
+                    <TextLoop
+                        interval={2500}
+                        springConfig={{ stiffness: 90 }}
+                        className="loop"
+                    >
+                        <div className="logo"><img src={reactLogo} alt="React" /><img src={reduxLogo} alt="Redux" /></div>
+                        <div className="logo"><img src={htmlLogo} alt="HTML5" /><img src={cssLogo} alt="CSS3" /><img src={sassLogo} alt="SASS" /></div>
+                        <div className="logo"><img src={webpackLogo} alt="Webpack" /><img src={babelLogo} alt="Babel" /></div>
+                        <div className="logo"></div>
+                    </TextLoop>
                 </h2>
             </section>
         </Fade>
@@ -80,7 +98,7 @@ const IndexPage = () => (
                     </div>
 
                     <div className="author">
-                        <p>Coded by <a href="/" className="mj"><img src={logo} alt="mj" /></a></p>
+                        <p>Coded by <a href="/" className="mj"><img src={mj} alt="mj" /></a></p>
                         <p className="code">see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested</p>
                     </div>
                 </div>
