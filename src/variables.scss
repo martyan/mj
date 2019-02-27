@@ -15,6 +15,7 @@ $desktop: 920px;
 
 $facebook: #3b5998;
 $google: #ea4335;
+$linkedin: #0075b5;
 
 @mixin gradient($swatch) {
 
@@ -60,6 +61,12 @@ $google: #ea4335;
     } @else if $swatch == "bright-inverse" {
         $color1: #ffffff;
         $color2: #aaaaaa;
+        background: $color1;
+        background: linear-gradient(135deg, $color1 0%, $color2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2',GradientType=1);
+    } @else if $swatch == "black" {
+        $color1: #222;
+        $color2: #111;
         background: $color1;
         background: linear-gradient(135deg, $color1 0%, $color2 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2',GradientType=1);

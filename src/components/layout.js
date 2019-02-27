@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import logo from '../images/mj.svg'
 import './layout.scss'
+import surfImg from '../images/surf.svg'
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -20,7 +21,7 @@ const Layout = ({ children }) => (
             <>
                 <main>{children}</main>
                 <footer>
-                    <a href="/" className="logo"><img src={logo} alt="mj" /></a>
+
                 </footer>
             </>
         )}

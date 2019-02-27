@@ -9,6 +9,7 @@ import githubLogo from '../images/github.svg'
 import entrydoLogo from '../images/entrydo.svg'
 import surfImg from '../images/surf.svg'
 import './index.scss'
+import logo from '../images/mj.svg'
 
 const IndexPage = () => (
     <Layout>
@@ -21,49 +22,49 @@ const IndexPage = () => (
         </section>
 
         <section className="stack">
-            <div className="container">
-                <h2>
-                    <span>My favorite stack consists of </span>
-                    <TextLoop
-                        interval={2000}
-                        adjustingSpeed={250}
-                        springConfig={{ stiffness: 180 }}
-                        children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
-                        className="loop"
-                    />
-                    <span>.</span>
-                </h2>
-            </div>
+            <h2>
+                <span>My favorite stack consists of </span>
+                <TextLoop
+                    interval={2000}
+                    adjustingSpeed={250}
+                    springConfig={{ stiffness: 180 }}
+                    children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
+                    className="loop"
+                />
+                <span>.</span>
+            </h2>
         </section>
 
         <section className="open-source">
-            <div className="container">
-                <div className="inner">
-                    <div className="logo">
-                        <img src={githubLogo} alt="GitHub" />
-                    </div>
-                    <div className="desc">
-                        <h2><a href="https://github.com/martyan" target="_blank">github.com/<b>martyan</b></a></h2>
-                        <p>Check <b>Examples</b> or play around with <b>generator</b> of <b>react-customizable-progressbar</b></p>
-                    </div>
+            <div className="inner">
+                <div className="logo">
+                    <img src={githubLogo} alt="GitHub" />
+                </div>
+                <div className="desc">
+                    <h2><a href="https://github.com/martyan" target="_blank">github.com/<b>martyan</b></a></h2>
+                    <p>Check <b>Examples</b> or play around with <b>generator</b> of <b>react-customizable-progressbar</b></p>
                 </div>
             </div>
         </section>
 
         <section className="entrydo">
-                <div className="logo">
-                    <img src={entrydoLogo} alt="Entrydo" />
-                </div>
-                <div className="desc">
-                    <p><b>Entry management system</b> for <b>smooth check-in</b> experience at <b>your event</b>.</p>
-                </div>
+            <div className="logo">
+                <img src={entrydoLogo} alt="Entrydo" />
+            </div>
+            <div className="desc">
+                <p><b>Entry management system</b> for <b>smooth check-in</b> experience at <b>your event</b>.</p>
+            </div>
         </section>
 
-        <section>
+        <section className="footer">
             <div>If you want to get in touch or just say hi please send me a message on <i className="fa fa-linkedin"></i> Linked-in</div>
             <div>Check source code of this page</div>
 
-            <img src={surfImg} alt="Surf"/>
+            <div className="board">
+                <img src={surfImg} alt="Surf"/>
+            </div>
+
+            <a href="/" className="mj"><img src={logo} alt="mj" /></a>
         </section>
     </Layout>
 )
