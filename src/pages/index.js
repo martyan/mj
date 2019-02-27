@@ -15,6 +15,7 @@ import cssLogo from '../images/css.svg'
 import sassLogo from '../images/sass.svg'
 import webpackLogo from '../images/webpack.svg'
 import babelLogo from '../images/babel.svg'
+import restLogo from '../images/rest.svg'
 
 import surfImg from '../images/surf.svg'
 import mj from '../images/mj.svg'
@@ -50,7 +51,7 @@ const IndexPage = () => (
                         <div className="logo"><img src={reactLogo} alt="React" /><img src={reduxLogo} alt="Redux" /></div>
                         <div className="logo"><img src={htmlLogo} alt="HTML5" /><img src={cssLogo} alt="CSS3" /><img src={sassLogo} alt="SASS" /></div>
                         <div className="logo"><img src={webpackLogo} alt="Webpack" /><img src={babelLogo} alt="Babel" /></div>
-                        <div className="logo"></div>
+                        <div className="logo"><img src={restLogo} alt="REST API" /></div>
                     </TextLoop>
                 </h2>
             </section>
