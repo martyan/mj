@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 import TextLoop from 'react-text-loop'
+import ReactGA from 'react-ga'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -27,7 +28,17 @@ const IndexPage = () => (
 
         <section className="intro">
             <div className="container">
-                <h1>Hi! I'm <b>Martin</b>,<span className="mobile"><br /></span> front-end developer currently living <span className="mobile"><br /></span>in <a href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z" target="_blank">Zlin <i className="fa fa-map-marker"></i></a>.</h1>
+                <h1>
+                    Hi! I'm <b>Martin</b>,{' '}
+                    <span className="mobile"><br /></span> front-end developer currently living <span className="mobile"><br /></span>in{' '}
+                    <a
+                        href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z"
+                        target="_blank"
+                        onClick={() => ReactGA.event({category: 'User', action: 'Clicked on location Zlin'})}
+                    >
+                        Zlin <i className="fa fa-map-marker"></i>
+                    </a>.
+                </h1>
             </div>
         </section>
 
@@ -64,8 +75,19 @@ const IndexPage = () => (
                         <img src={githubLogo} alt="GitHub" />
                     </div>
                     <div className="desc">
-                        <h2><a href="https://github.com/martyan" target="_blank">github.com/<b>martyan</b></a></h2>
-                        <p>Check <a>Examples</a> or play around <span className="mobile"><br /></span> with <a>generator</a> of <span className="mobile"><br /></span><a>react-customizable-progressbar</a></p>
+                        <h2>
+                            <a
+                                href="https://github.com/martyan"
+                                target="_blank"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on GitHub profile'})}
+                            >
+                                github.com/<b>martyan</b>
+                            </a>
+                        </h2>
+                        <p>
+                            Check <a>Examples</a> or play around <span className="mobile"><br /></span>{' '}
+                            with <a>generator</a> of <span className="mobile"><br /></span>{' '}
+                            <a>react-customizable-progressbar</a></p>
                     </div>
                 </div>
             </section>
@@ -77,7 +99,11 @@ const IndexPage = () => (
                     <img src={entrydoLogo} alt="Entrydo" />
                 </div>
                 <div className="desc">
-                    <p><b>Entry management system</b><span className="mobile"><br /></span> for <b>smooth check-in</b> experience<span className="mobile"><br /></span> at <b>your event</b>.</p>
+                    <p>
+                        <b>Entry management system</b><span className="mobile"><br /></span>{' '}
+                        for <b>smooth check-in</b> experience<span className="mobile"><br /></span>{' '}
+                        at <b>your event</b>.
+                    </p>
                 </div>
             </section>
         </Fade>
@@ -87,7 +113,11 @@ const IndexPage = () => (
                 <div className="get-in-touch">
                     <div className="text">If you want to get in touch or just say Hi please send me a message on my</div>
                     <button className="cta">
-                        <a href="https://www.linkedin.com/in/mjuzl/" target="_blank">
+                        <a
+                            href="https://www.linkedin.com/in/mjuzl/"
+                            target="_blank"
+                            onClick={() => ReactGA.event({category: 'User', action: 'Clicked on Linked-in profile'})}
+                        >
                             <i className="fa fa-linkedin"></i> Linked-in profile
                         </a>
                     </button>
@@ -99,8 +129,15 @@ const IndexPage = () => (
                     </div>
 
                     <div className="author">
-                        <p>Coded by <a href="/" className="mj"><img src={mj} alt="mj" /></a></p>
-                        <p className="code">see the <a href="https://github.com/martyan/mj" target="_blank">code</a> if interested</p>
+                        <p>Coded by <a href="/" className="mj" ><img src={mj} alt="mj" /></a></p>
+                        <p className="code">
+                            see the{' '}
+                            <a
+                                href="https://github.com/martyan/mj"
+                                target="_blank"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on page source code'})}
+                            >code</a> if interested
+                        </p>
                     </div>
                 </div>
             </section>

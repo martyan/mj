@@ -351,8 +351,9 @@
         text-align: center;
 
         .text {
+
             font-weight: 100;
-            font-size: 1.3em;
+            font-size: 1.2em;
             line-height: 140%;
             margin-bottom: 30px;
 
@@ -408,6 +409,7 @@
 
         .board {
             width: 50px;
+            margin-top: -10px;
             transform: rotate(15deg);
         }
 
