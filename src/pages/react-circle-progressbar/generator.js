@@ -9,7 +9,7 @@ import './index.scss'
 
 const RCP = () => (
     <Layout>
-        <SEO title="React-circle-progressbar generator / playground" keywords={[`react`, `circle`, `circular`, `progress`, `bar`, `component`, `genarator`, `playground`]} />
+        <SEO title="Playground / generator of react-circle-progressbar" keywords={[`react`, `circle`, `circular`, `progress`, `bar`, `component`, `generator`, `playground`]} />
 
         <Generator />
     </Layout>
