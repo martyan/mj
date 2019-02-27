@@ -24,7 +24,7 @@ import './index.scss'
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Martin Juzl" keywords={[`martin`, `juzl`, `front-end`, `developer`, `entrydo`, `github`, `react`, `redux`]} />
 
         <section className="intro">
             <div className="container">
@@ -35,9 +35,7 @@ const IndexPage = () => (
                         href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z"
                         target="_blank"
                         onClick={() => ReactGA.event({category: 'User', action: 'Clicked on location Zlin'})}
-                    >
-                        Zlin <i className="fa fa-map-marker"></i>
-                    </a>.
+                    >Zlin <i className="fa fa-map-marker"></i></a>.
                 </h1>
             </div>
         </section>
@@ -80,14 +78,27 @@ const IndexPage = () => (
                                 href="https://github.com/martyan"
                                 target="_blank"
                                 onClick={() => ReactGA.event({category: 'User', action: 'Clicked on GitHub profile'})}
-                            >
-                                github.com/<b>martyan</b>
-                            </a>
+                            >github.com/<b>martyan</b></a>
                         </h2>
                         <p>
-                            Check <a>Examples</a> or play around <span className="mobile"><br /></span>{' '}
-                            with <a>generator</a> of <span className="mobile"><br /></span>{' '}
-                            <a>react-customizable-progressbar</a></p>
+                            Check{' '}
+                            <Link
+                                to="/react-circle-progressbar"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar examples'})}
+                            >Examples</Link>{' '}
+                            or play around <span className="mobile"><br /></span>{' '}
+                            with{' '}
+                            <Link
+                                to="/react-circle-progressbar/generator"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar generator'})}
+                            >Generator</Link>{' '}
+                            of <span className="mobile"><br /></span>{' '}
+                            <a
+                                href="https://github.com/martyan/react-circle-progressbar"
+                                target="_blank"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar'})}
+                            >react-customizable-progressbar</a>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -117,9 +128,7 @@ const IndexPage = () => (
                             href="https://www.linkedin.com/in/mjuzl/"
                             target="_blank"
                             onClick={() => ReactGA.event({category: 'User', action: 'Clicked on Linked-in profile'})}
-                        >
-                            <i className="fa fa-linkedin"></i> Linked-in profile
-                        </a>
+                        ><i className="fa fa-linkedin"></i> Linked-in profile</a>
                     </button>
                 </div>
 
@@ -136,7 +145,8 @@ const IndexPage = () => (
                                 href="https://github.com/martyan/mj"
                                 target="_blank"
                                 onClick={() => ReactGA.event({category: 'User', action: 'Clicked on page source code'})}
-                            >code</a> if interested
+                            >code</a>{' '}
+                            if interested
                         </p>
                     </div>
                 </div>
