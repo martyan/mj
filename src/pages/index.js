@@ -43,7 +43,7 @@ const IndexPage = () => (
         <Fade bottom>
             <section className="stack">
                 <h2 className="text">
-                    <span>My favorite stack consists of</span>
+                    <span>My favorite stack consists of</span><span className="mobile"><br /></span>
                     <TextLoop
                         interval={2500}
                         springConfig={{ stiffness: 90 }}
