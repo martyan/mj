@@ -19,3 +19,11 @@ button {
     max-width: 720px;
     margin: 0 auto;
 }
+
+.mobile {
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+
+}

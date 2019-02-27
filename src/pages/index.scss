@@ -30,10 +30,10 @@
 
     h1 {
 
-        padding: 90px 0 60px;
+        padding: 90px 10px 60px;
         margin: 0;
         font-weight: 300;
-        font-size: 1.6em;
+        font-size: 1.5em;
         line-height: 140%;
         color: white;
         text-align: center;
@@ -67,7 +67,9 @@
 
         color: #444;
         margin: 0;
+        padding: 0 15px;
         font-weight: 400;
+        line-height: 250%;
         font-size: 1.2em;
         text-align: center;
 
@@ -77,10 +79,18 @@
 
         &.text {
 
-            margin-bottom: 50px;
+            margin-bottom: 0;
+
+            @media (min-width: $tablet) {
+                margin-bottom: 50px;
+            }
 
             span {
-                margin-right: 20px;
+
+                @media (min-width: $tablet) {
+                    margin-right: 20px;
+                }
+
             }
 
         }
@@ -90,6 +100,11 @@
             min-height: 60px;
             color: #222;
             font-weight: 600;
+            font-size: 1.2em;
+
+            @media (min-width: $tablet) {
+                font-size: 1em;
+            }
 
             .logo {
 
@@ -97,9 +112,15 @@
                 align-items: center;
 
                 img {
+
                     display: inline-block;
                     margin: 0 10px;
-                    height: 60px;
+                    height: 50px;
+
+                    @media (min-width: $tablet) {
+                        height: 60px;
+                    }
+
                 }
 
             }
@@ -113,8 +134,13 @@
 .open-source {
 
     position: relative;
-    padding: 22vh 0;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
+    padding: 100px 0;
+
+    @media (min-width: $tablet) {
+        padding: 22vh 0;
+        margin-bottom: 120px;
+    }
 
     &:after {
         content: '';
@@ -140,18 +166,36 @@
     }
 
     .inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        padding: 0 15px;
+
+        @media (min-width: $tablet) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
     }
 
     .logo {
 
-        margin-right: 50px;
-        flex-basis: 140px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media (min-width: $tablet) {
+            flex-basis: 140px;
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
 
         img {
-            width: 100%;
+
+            width: 100px;
+
+            @media (min-width: $tablet) {
+                width: 100%;
+            }
+
         }
 
     }
@@ -162,14 +206,53 @@
 
         h2 {
 
-            margin: 10px 0 25px;
+            margin: 10px 0 40px;
+            text-align: center;
+
+            @media (min-width: $tablet) {
+                text-align: left;
+                margin-bottom: 25px;
+            }
 
             a {
 
                 color: white;
-                font-size: 1.4em;
+                font-size: 1.1em;
                 font-weight: 100;
                 margin-bottom: 30px;
+                text-decoration: none;
+                transition: .2s ease;
+
+                @media (min-width: $tablet) {
+                    font-size: 1.4em;
+                }
+
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+
+            }
+
+        }
+
+        p {
+
+            font-weight: 100;
+            line-height: 140%;
+            font-size: 1.05em;
+            text-align: center;
+
+            @media (min-width: $tablet) {
+                text-align: left;
+            }
+
+            a {
+
+                display: inline-block;
+                margin: 0 1px;
+                color: white;
+                font-weight: 400;
+                font-size: 1.05em;
                 text-decoration: none;
                 transition: .2s ease;
 
@@ -181,27 +264,29 @@
 
         }
 
-        p {
-            font-weight: 100;
-            line-height: 140%;
-            font-size: 1.05em;
-        }
-
     }
 
 }
 
 .entrydo {
 
-    padding: 10vh 0;
     margin-bottom: 200px;
     text-align: center;
+    padding: 0;
+
+    @media (min-width: $tablet) {
+        padding: 22vh 0;
+    }
 
     .logo {
 
         width: 100%;
-        max-width: 320px;
+        max-width: 220px;
         margin: 0 auto;
+
+        @media (min-width: $tablet) {
+            max-width: 320px;
+        }
 
         img {
             width: 100%;
@@ -211,17 +296,24 @@
 
     .desc {
 
-        color: #444;
-        font-weight: 100;
 
         p {
-            font-size: 1.5em;
+
+            color: #444;
+            font-weight: 100;
+            font-size: 1.1em;
             margin-bottom: 30px;
             line-height: 140%;
+
+            @media (min-width: $tablet) {
+                font-size: 1.5em;
+            }
+
         }
 
         b {
-            margin: 0 10px;
+            font-size: 1.05em;
+            margin: 0 2px;
         }
 
     }
@@ -231,9 +323,13 @@
 .footer {
 
     position: relative;
-    padding: 14vh 50px 20px;
+    padding: 14vh 15px 20px;
     color: white;
     background: #111;
+
+    @media (min-width: $tablet) {
+        padding: 14vh 50px 20px;
+    }
 
     &:after {
         content: '';
@@ -255,13 +351,19 @@
         .text {
             font-weight: 100;
             font-size: 1.3em;
-            margin-bottom: 50px;
+            line-height: 140%;
+            margin-bottom: 30px;
+
+            @media (min-width: $tablet) {
+                margin-bottom: 50px;
+            }
+
         }
 
         .cta {
 
             display: inline-block;
-            padding: 12px 20px;
+            padding: 10px 15px;
             border: 2px solid $linkedin;
             background: transparent;
             color: $linkedin;
@@ -270,6 +372,10 @@
             font-weight: 400;
             letter-spacing: .02em;
             transition: .4s ease;
+
+            @media (min-width: $tablet) {
+                padding: 12px 20px;
+            }
 
             &:hover {
                 box-shadow: inset 240px 0 0 0 $linkedin;
@@ -314,6 +420,7 @@
 
             .mj {
                 display: inline-block;
+                vertical-align: top;
                 width: 125px;
                 height: 17px;
                 margin-left: 10px;

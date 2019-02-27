@@ -26,7 +26,7 @@ const IndexPage = () => (
 
         <section className="intro">
             <div className="container">
-                <h1>Hi!&nbsp;I'm&nbsp;<b>Martin</b>, front-end&nbsp;developer currently&nbsp;living&nbsp;in <a href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z" target="_blank">Zlin&nbsp;<i className="fa fa-map-marker"></i></a>.</h1>
+                <h1>Hi! I'm <b>Martin</b>,<span className="mobile"><br /></span> front-end developer currently living <span className="mobile"><br /></span>in <a href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z" target="_blank">Zlin <i className="fa fa-map-marker"></i></a>.</h1>
             </div>
         </section>
 
@@ -64,7 +64,7 @@ const IndexPage = () => (
                     </div>
                     <div className="desc">
                         <h2><a href="https://github.com/martyan" target="_blank">github.com/<b>martyan</b></a></h2>
-                        <p>Check <b>Examples</b> or play around with <b>generator</b> of <b>react-customizable-progressbar</b></p>
+                        <p>Check <a>Examples</a> or play around <span className="mobile"><br /></span> with <a>generator</a> of <span className="mobile"><br /></span><a>react-customizable-progressbar</a></p>
                     </div>
                 </div>
             </section>
@@ -76,7 +76,7 @@ const IndexPage = () => (
                     <img src={entrydoLogo} alt="Entrydo" />
                 </div>
                 <div className="desc">
-                    <p><b>Entry management system</b> for <b>smooth check-in</b> experience at <b>your event</b>.</p>
+                    <p><b>Entry management system</b><span className="mobile"><br /></span> for <b>smooth check-in</b> experience<span className="mobile"><br /></span> at <b>your event</b>.</p>
                 </div>
             </section>
         </Fade>
