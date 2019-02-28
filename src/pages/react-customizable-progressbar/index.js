@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
-import Examples from 'react-customizable-progressbar/dist/Examples'
+// import Examples from 'react-customizable-progressbar/dist/Examples'
 
 import SEO from '../../components/seo'
 
@@ -29,7 +29,7 @@ const RCP = () => (
             </p>
         </div>
 
-        <Examples />
+        {/*<Examples />*/}
 
     </div>
 )

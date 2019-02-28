@@ -1,10 +1,10 @@
 import React from 'react'
-import Generator from 'react-customizable-progressbar/dist/Generator'
+import ReactGA from 'react-ga'
+import Generator from '../../components/Generator'
 
 import SEO from '../../components/seo'
 
 import './generator.scss'
-import ReactGA from 'react-ga'
 
 
 const RCP = () => (
