@@ -83,21 +83,21 @@ const IndexPage = () => (
                         <p>
                             Check{' '}
                             <Link
-                                to="/react-circle-progressbar"
-                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar examples'})}
+                                to="/react-customizable-progressbar"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-customizable-progressbar examples'})}
                             >Examples</Link>{' '}
                             or play around <span className="mobile"><br /></span>{' '}
                             with{' '}
                             <Link
-                                to="/react-circle-progressbar/generator"
-                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar generator'})}
+                                to="/react-customizable-progressbar/generator"
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-customizable-progressbar generator'})}
                             >Generator</Link>{' '}
                             of <span className="mobile"><br /></span>{' '}
                             <a
-                                href="https://github.com/martyan/react-circle-progressbar"
+                                href="https://github.com/martyan/react-customizable-progressbar"
                                 target="_blank"
-                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-circle-progressbar'})}
-                            >react-circle-progressbar</a>
+                                onClick={() => ReactGA.event({category: 'User', action: 'Clicked on react-customizable-progressbar'})}
+                            >react-customizable-progressbar</a>
                         </p>
                     </div>
                 </div>
