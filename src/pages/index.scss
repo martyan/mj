@@ -5,10 +5,18 @@
 
     font-family: 'Roboto Slab', sans-serif;
 
+    img, button {
+        user-select: none;
+    }
+
     .intro {
 
         position: relative;
         padding: 50px 0 70px;
+
+        ::selection {
+            background: #333;
+        }
 
         &:after {
             content: '';
@@ -72,6 +80,10 @@
 
         padding: 14vh 0;
         min-height: 25vh;
+
+        ::selection {
+            background: #efefef;
+        }
 
         h2 {
 
@@ -161,6 +173,10 @@
         position: relative;
         margin-bottom: 100px;
         padding: 100px 0;
+
+        ::selection {
+            background: $orange;
+        }
 
         @media (min-width: $desktop) {
             padding: 22vh 0;
@@ -309,6 +325,10 @@
         text-align: center;
         padding: 0;
 
+        ::selection {
+            background: #efefef;
+        }
+
         @media (min-width: $tablet) {
             padding: 22vh 0;
         }
@@ -366,6 +386,10 @@
 
         @media (min-width: $tablet) {
             padding: 14vh 50px 20px;
+        }
+
+        ::selection {
+            background: $orange;
         }
 
         &:after {
