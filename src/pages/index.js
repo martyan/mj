@@ -24,7 +24,7 @@ import './index.scss'
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Martin Juzl" keywords={[`martin`, `juzl`, `front-end`, `developer`, `entrydo`, `github`, `react`, `redux`]} />
+        <SEO title="Martin Juzl | Front-end developer" keywords={[`martin`, `juzl`, `front-end`, `developer`, `entrydo`, `github`, `react`, `redux`]} />
 
         <div className="martinjuzl">
 
