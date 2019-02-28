@@ -30,7 +30,8 @@ const IndexPage = () => (
             <div className="container">
                 <h1>
                     Hi! I'm <b>Martin</b>,{' '}
-                    <span className="mobile"><br /></span> front-end developer currently living <span className="mobile"><br /></span>in{' '}
+                    <span className="mobile"><br /></span>front-end developer{' '}
+                    <span className="mobile"><br /></span>currently living <span className="mobile"><br /></span>in{' '}
                     <a
                         href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z"
                         target="_blank"
