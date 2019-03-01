@@ -126,8 +126,8 @@ const IndexPage = () => (
         </Fade>
 
         <Fade bottom>
-            <section className="footer">
-                <div className="get-in-touch">
+            <section className="get-in-touch">
+                <div className="linked-in">
                     <div className="text">If you want to get in touch or just say Hi please send me a message on my</div>
                     <button className="cta">
                         <a
