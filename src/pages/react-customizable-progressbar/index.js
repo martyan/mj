@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactGA from 'react-ga'
-// import Examples from 'react-customizable-progressbar/dist/Examples'
+import Examples from '../../components/Examples/Examples'
+import Footer from '../../components/Footer'
 
 import SEO from '../../components/seo'
 
@@ -10,7 +11,7 @@ import './index.scss'
 const RCP = () => (
     <div className="rcp-examples">
 
-        <SEO title="Examples of react-customizable-progressbar" keywords={[`react`, `circle`, `circular`, `progress`, `bar`, `component`, `examples`]} />
+        <SEO title="Examples of react-customizable-progressbar" keywords={[`react`, `circular`, `radial`, `progress`, `bar`, `component`, `examples`]} />
 
         <div className="header">
             <p>Example usage of{' '}
@@ -29,7 +30,9 @@ const RCP = () => (
             </p>
         </div>
 
-        {/*<Examples />*/}
+        <Examples />
+
+        <Footer />
 
     </div>
 )

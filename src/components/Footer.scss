@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.footer {
+
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 25px;
+    text-align: right;
+
+    span {
+        color: #bbb;
+        font-size: .9em;
+        font-weight: 100;
+        margin-right: 5px;
+    }
+
+    a {
+
+        display: inline-block;
+
+        img {
+            width: 110px;
+        }
+
+    }
+
+}

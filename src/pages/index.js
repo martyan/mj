@@ -18,7 +18,7 @@ import babelLogo from '../images/babel.svg'
 import restLogo from '../images/rest.svg'
 
 import surfImg from '../images/surf.svg'
-import mj from '../images/mj.svg'
+import mj from '../images/mj_white.svg'
 import './index.scss'
 
 const IndexPage = () => (

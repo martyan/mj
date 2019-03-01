@@ -1,4 +1,5 @@
 import React from 'react'
+import ProgressBar from 'react-customizable-progressbar'
 import Controls from './Controls'
 import ImplementationCode from './ImplementationCode'
 import {
@@ -40,14 +41,7 @@ class Index extends React.Component {
 
     state = {
         ...defaultState,
-        codeVisible: false,
-        ProgressBar: null
-    }
-
-    componentDidMount = () => {
-        import('react-customizable-progressbar')
-            .then(({ default: ProgressBar }) => this.setState({ProgressBar}))
-            .catch(console.log)
+        codeVisible: false
     }
 
     handleChange = (key, value) => {
@@ -62,39 +56,31 @@ class Index extends React.Component {
         this.setState({ [key]: e.target.checked === true })
     }
 
-    renderThumb = (state) => {
-        if(!state.ProgressBar) return null
-
-        const ProgressBar = state.ProgressBar
-
-        return (
-            <div onClick={() => this.setState({ ...state })} className="thumb">
-                <ProgressBar
-                    {...state}
-                    radius={50}
-                    strokeWidth={state.strokeWidth / 2}
-                    trackStrokeWidth={state.trackStrokeWidth / 2}
-                    pointerRadius={state.pointerRadius / 2}
-                    pointerStrokeWidth={state.pointerStrokeWidth / 2}
-                >
-                    <Indicator
-                        progress={state.progress}
-                        steps={state.steps}
-                        style={{
-                            fontSize: '.7em',
-                            color: '#aaa',
-                            fontWeight: '100'
-                        }}
-                    />
-                </ProgressBar>
-            </div>
-        )
-    }
+    renderThumb = (state) => (
+        <div onClick={() => this.setState({ ...state })} className="thumb">
+            <ProgressBar
+                {...state}
+                radius={50}
+                strokeWidth={state.strokeWidth / 2}
+                trackStrokeWidth={state.trackStrokeWidth / 2}
+                pointerRadius={state.pointerRadius / 2}
+                pointerStrokeWidth={state.pointerStrokeWidth / 2}
+            >
+                <Indicator
+                    progress={state.progress}
+                    steps={state.steps}
+                    style={{
+                        fontSize: '.7em',
+                        color: '#aaa',
+                        fontWeight: '100'
+                    }}
+                />
+            </ProgressBar>
+        </div>
+    )
 
     render = () => {
-        const { codeVisible, ProgressBar } = this.state
-
-        if(!ProgressBar) return null
+        const { codeVisible } = this.state
 
         const handlers = {
             handleChange: this.handleChange,

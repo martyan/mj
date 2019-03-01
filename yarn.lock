@@ -8797,10 +8797,10 @@ react-color@^2.17.0:
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
 
-react-customizable-progressbar@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/react-customizable-progressbar/-/react-customizable-progressbar-0.1.13.tgz#e62cc4be8240bc680130eacf3c83166b36d1ee24"
-  integrity sha512-FAW7MZwEmgZYSF6YSQ+/7t1Qu/5K+ILOB1q7UoH0D2yzs2EUxVWExUj4Ql+PtAfSFsfq9L8YOHEyBX5FsuusLw==
+react-customizable-progressbar@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-customizable-progressbar/-/react-customizable-progressbar-0.2.0.tgz#e4537b3894b581fdb208abb8bf2c4a546173b8f6"
+  integrity sha512-oZQMJF/hY5oLqCIiAJd9PV438vYmfF73udOAkq1JDyu8IPMaovDhFVAP8cSwuLfM/qwovnvTACI4Pn+ECiMBvQ==
 
 react-dev-utils@^4.2.1:
   version "4.2.3"

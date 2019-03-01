@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactGA from 'react-ga'
 import Generator from '../../components/Generator'
+import Footer from '../../components/Footer'
 
 import SEO from '../../components/seo'
 
@@ -10,7 +11,7 @@ import './generator.scss'
 const RCP = () => (
     <div className="rcp-generator">
 
-        <SEO title="Playground / generator of react-customizable-progressbar" keywords={[`react`, `circle`, `circular`, `progress`, `bar`, `component`, `generator`, `playground`]} />
+        <SEO title="Playground / generator of react-customizable-progressbar" keywords={[`react`, `circular`, `radial`, `progress`, `bar`, `component`, `generator`, `playground`]} />
 
         <div className="header">
             <p>Generator of {' '}
@@ -29,6 +30,8 @@ const RCP = () => (
         </div>
 
         <Generator />
+
+        <Footer />
 
     </div>
 )
