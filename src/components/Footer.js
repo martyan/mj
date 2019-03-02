@@ -6,7 +6,7 @@ import './Footer.scss'
 
 const Footer = () => (
     <div className="footer">
-        <span>Coded by{' '}</span>
+        <span>Coded by </span>
         <Link to="/">
             <img src={mj} alt="mj" />
         </Link>
