@@ -25,16 +25,7 @@ const IndexPage = () => (
     <div className="martinjuzl">
         <SEO
             title="Martin Juzl | Front-end developer"
-            keywords={[
-                `martin`,
-                `juzl`,
-                `front-end`,
-                `developer`,
-                `entrydo`,
-                `github`,
-                `react`,
-                `redux`,
-            ]}
+            keywords={[`martin`, `juzl`, `front-end`, `developer`, `entrydo`, `github`, `react`, `redux`]}
         />
 
         <section className="intro">
@@ -59,7 +50,7 @@ const IndexPage = () => (
                         onClick={() =>
                             ReactGA.event({
                                 category: 'User',
-                                action: 'Clicked on location Zlin',
+                                action: 'Clicked on location Zlin'
                             })
                         }
                     >
@@ -81,20 +72,11 @@ const IndexPage = () => (
                         interval={2500}
                         springConfig={{ stiffness: 90 }}
                         className="loop"
-                        children={[
-                            'React + Redux',
-                            'HTML5 + CSS3 (SASS)',
-                            'Webpack + Babel',
-                            'REST API',
-                        ]}
+                        children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
                     />
                 </h2>
                 <h2 className="logos">
-                    <TextLoop
-                        interval={2500}
-                        springConfig={{ stiffness: 90 }}
-                        className="loop"
-                    >
+                    <TextLoop interval={2500} springConfig={{ stiffness: 90 }} className="loop">
                         <div className="logo">
                             <img src={reactLogo} alt="React" />
                             <img src={reduxLogo} alt="Redux" />
@@ -130,7 +112,7 @@ const IndexPage = () => (
                                 onClick={() =>
                                     ReactGA.event({
                                         category: 'User',
-                                        action: 'Clicked on GitHub profile',
+                                        action: 'Clicked on GitHub profile'
                                     })
                                 }
                             >
@@ -144,8 +126,7 @@ const IndexPage = () => (
                                 onClick={() =>
                                     ReactGA.event({
                                         category: 'User',
-                                        action:
-                                            'Clicked on react-customizable-progressbar examples',
+                                        action: 'Clicked on react-customizable-progressbar examples'
                                     })
                                 }
                             >
@@ -161,8 +142,7 @@ const IndexPage = () => (
                                 onClick={() =>
                                     ReactGA.event({
                                         category: 'User',
-                                        action:
-                                            'Clicked on react-customizable-progressbar generator',
+                                        action: 'Clicked on react-customizable-progressbar generator'
                                     })
                                 }
                             >
@@ -178,8 +158,7 @@ const IndexPage = () => (
                                 onClick={() =>
                                     ReactGA.event({
                                         category: 'User',
-                                        action:
-                                            'Clicked on react-customizable-progressbar',
+                                        action: 'Clicked on react-customizable-progressbar'
                                     })
                                 }
                             >
@@ -200,7 +179,7 @@ const IndexPage = () => (
                     onClick={() =>
                         ReactGA.event({
                             category: 'User',
-                            action: 'Clicked on Entrydo',
+                            action: 'Clicked on Entrydo'
                         })
                     }
                 >
@@ -226,8 +205,7 @@ const IndexPage = () => (
             <section className="get-in-touch">
                 <div className="linked-in">
                     <div className="text">
-                        If you want to get in touch or just say Hi please send
-                        me a message on my
+                        If you want to get in touch or just say Hi please send me a message on my
                     </div>
                     <button className="cta">
                         <a
@@ -236,7 +214,7 @@ const IndexPage = () => (
                             onClick={() =>
                                 ReactGA.event({
                                     category: 'User',
-                                    action: 'Clicked on Linked-in profile',
+                                    action: 'Clicked on Linked-in profile'
                                 })
                             }
                         >
@@ -265,7 +243,7 @@ const IndexPage = () => (
                                 onClick={() =>
                                     ReactGA.event({
                                         category: 'User',
-                                        action: 'Clicked on page source code',
+                                        action: 'Clicked on page source code'
                                     })
                                 }
                             >
