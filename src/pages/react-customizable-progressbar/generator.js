@@ -11,7 +11,11 @@ import './generator.scss'
 const RCP = () => (
     <div className="rcp-generator">
 
-        <SEO title="Playground / generator of react-customizable-progressbar" keywords={[`react`, `circular`, `radial`, `progress`, `bar`, `component`, `generator`, `playground`]} />
+        <SEO
+            title="Playground / generator of react-customizable-progressbar"
+            keywords={[`react`, `circular`, `radial`, `progress`, `bar`, `component`, `generator`, `playground`]}
+            description="Circular progress bar component for React"
+        />
 
         <div className="header">
             <p>Generator of {' '}

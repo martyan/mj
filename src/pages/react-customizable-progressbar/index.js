@@ -11,7 +11,11 @@ import './index.scss'
 const RCP = () => (
     <div className="rcp-examples">
 
-        <SEO title="Examples of react-customizable-progressbar" keywords={[`react`, `circular`, `radial`, `progress`, `bar`, `component`, `examples`]} />
+        <SEO
+            title="Examples of react-customizable-progressbar"
+            keywords={[`react`, `circular`, `radial`, `progress`, `bar`, `component`, `examples`]}
+            description="Circular progress bar component for React"
+        />
 
         <div className="header">
             <p>Example usage of{' '}
