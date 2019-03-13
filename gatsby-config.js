@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://martinjuzl.com`,
     title: ``,
     description: ``,
     author: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
