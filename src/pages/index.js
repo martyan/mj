@@ -238,7 +238,7 @@ const IndexPage = () => (
                         <p className="code">
                             see the{' '}
                             <a
-                                href="https://github.com/martyan/mj"
+                                href="https://github.com/martyan/martinjuzl.com"
                                 target="_blank"
                                 onClick={() =>
                                     ReactGA.event({
