@@ -45,16 +45,16 @@ const IndexPage = () => (
                     </span>
                     in{' '}
                     <a
-                        href="https://www.google.com/maps/place/Zlin/@49.2311334,17.6064672,12z"
+                        href="https://www.google.com/maps/place/Brno/@49.2022097,16.4378777,11z"
                         target="_blank"
                         onClick={() =>
                             ReactGA.event({
                                 category: 'User',
-                                action: 'Clicked on location Zlin'
+                                action: 'Clicked on location Brno'
                             })
                         }
                     >
-                        Zlin <i className="fa fa-map-marker" />
+                        Brno <i className="fa fa-map-marker" />
                     </a>
                     .
                 </h1>
