@@ -26,7 +26,8 @@
             height: 200%;
             bottom: 0;
             transform: skewY(3deg);
-            @include gradient('green');
+            //@include gradient('green');
+            background: linear-gradient(90deg, #6bdc8e, #5eb8c1);
         }
 
         &:before {
