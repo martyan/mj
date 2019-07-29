@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Index | start-coding</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+<p>List of your pages</p>
+
+<ul id="routing"></ul>
+
+<script>
+    const files = "start-coding.html".split(',')
+    const routing = document.getElementById('routing')
+
+    if(routing) {
+
+        files.forEach(file => {
+            const li = document.createElement('li')
+            const a = document.createElement('a')
+            const text = document.createTextNode(file)
+            a.href = './pages/' + file
+            a.appendChild(text)
+            li.appendChild(a)
+            routing.appendChild(li)
+        })
+
+    }
+</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28244283-11"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-28244283-11');
+    </script>
+
+
+<script type="text/javascript" src="main.js"></script></body>
+</html>
