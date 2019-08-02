@@ -20,6 +20,7 @@ const Indicator = props => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 textAlign: 'center',
+                userSelect: 'none',
                 position: 'absolute',
                 top: '0',
                 width: '100%',
