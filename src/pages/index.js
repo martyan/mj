@@ -16,6 +16,8 @@ import sassLogo from '../images/sass.svg'
 import webpackLogo from '../images/webpack.svg'
 import babelLogo from '../images/babel.svg'
 import restLogo from '../images/rest.svg'
+import firebaseLogo from '../images/firebase.svg'
+import nextLogo from '../images/nextjs.svg'
 
 import surfImg from '../images/surf.svg'
 import mj from '../images/mj_white.svg'
@@ -64,7 +66,7 @@ const IndexPage = () => (
         <Fade bottom>
             <section className="stack">
                 <h2 className="text">
-                    <span>My favorite stack consists of</span>
+                    <span>My favorite technologies include</span>
                     <span className="mobile">
                         <br />
                     </span>
@@ -72,27 +74,31 @@ const IndexPage = () => (
                         interval={2500}
                         springConfig={{ stiffness: 90 }}
                         className="loop"
-                        children={['React + Redux', 'HTML5 + CSS3 (SASS)', 'Webpack + Babel', 'REST API']}
+                        children={['NextJS + Firebase', 'React + Redux', 'Webpack + Babel', 'HTML5 + CSS3 (SASS)'/*, 'REST API'*/]}
                     />
                 </h2>
                 <h2 className="logos">
                     <TextLoop interval={2500} springConfig={{ stiffness: 90 }} className="loop">
                         <div className="logo">
-                            <img src={reactLogo} alt="React" />
-                            <img src={reduxLogo} alt="Redux" />
+                            <img src={nextLogo} alt="NextJS" />
+                            <img src={firebaseLogo} alt="Firebase" />
                         </div>
                         <div className="logo">
-                            <img src={htmlLogo} alt="HTML5" />
-                            <img src={cssLogo} alt="CSS3" />
-                            <img src={sassLogo} alt="SASS" />
+                            <img src={reactLogo} alt="React" />
+                            <img src={reduxLogo} alt="Redux" />
                         </div>
                         <div className="logo">
                             <img src={webpackLogo} alt="Webpack" />
                             <img src={babelLogo} alt="Babel" />
                         </div>
                         <div className="logo">
-                            <img src={restLogo} alt="REST API" />
+                            <img src={htmlLogo} alt="HTML5" />
+                            <img src={cssLogo} alt="CSS3" />
+                            <img src={sassLogo} alt="SASS" />
                         </div>
+                        {/*<div className="logo">*/}
+                            {/*<img src={restLogo} alt="REST API" />*/}
+                        {/*</div>*/}
                     </TextLoop>
                 </h2>
             </section>
