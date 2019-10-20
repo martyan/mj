@@ -18,6 +18,8 @@ import babelLogo from '../images/babel.svg'
 import restLogo from '../images/rest.svg'
 import firebaseLogo from '../images/firebase.svg'
 import nextLogo from '../images/nextjs.svg'
+import psLogo from '../images/ps.svg'
+import aiLogo from '../images/ai.svg'
 
 import surfImg from '../images/surf.svg'
 import mj from '../images/mj_white.svg'
@@ -75,7 +77,7 @@ const IndexPage = () => (
                         interval={2500}
                         springConfig={{ stiffness: 90 }}
                         className="loop"
-                        children={['NextJS + Firebase', 'React + Redux', 'Webpack + Babel', 'HTML5 + CSS3 (SASS)'/*, 'REST API'*/]}
+                        children={['NextJS + Firebase', 'React + Redux', 'Webpack + Babel', 'HTML5 + CSS3 (SASS)', 'Adobe PS + AI'/*, 'REST API'*/]}
                     />
                 </h2>
                 <h2 className="logos">
@@ -96,6 +98,10 @@ const IndexPage = () => (
                             <img src={htmlLogo} alt="HTML5" />
                             <img src={cssLogo} alt="CSS3" />
                             <img src={sassLogo} alt="SASS" />
+                        </div>
+                        <div className="logo">
+                            <img src={psLogo} alt="Adobe Photoshop" />
+                            <img src={aiLogo} alt="Adobe Illustrator" />
                         </div>
                         {/*<div className="logo">*/}
                             {/*<img src={restLogo} alt="REST API" />*/}
