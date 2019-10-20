@@ -245,12 +245,12 @@ const IndexPage = () => (
                     </div>
 
                     <div className="author">
-                        <p>
+                        {/*<p>
                             Coded by{' '}
                             <a href="/" className="mj">
                                 <img src={mj} alt="mj" />
                             </a>
-                        </p>
+                        </p>*/}
                         <p className="code">
                             see the{' '}
                             <a
@@ -263,7 +263,7 @@ const IndexPage = () => (
                                     })
                                 }
                             >
-                                code
+                                source code
                             </a>{' '}
                             if interested
                         </p>
