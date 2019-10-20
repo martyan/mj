@@ -9,6 +9,39 @@
         user-select: none;
     }
 
+    //.github-graph {
+    //
+    //    background: white;
+    //    padding: 15px;
+    //    font-family: sans-serif;
+    //    font-size: 10px;
+    //    font-weight: 300;
+    //
+    //    text {
+    //        fill: #666;
+    //    }
+    //
+    //}
+
+    .github-graph {
+
+        display: block;
+        overflow-x: scroll;
+        padding: 15px;
+        font-family: sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+
+        text {
+            fill: #ddd;
+        }
+
+        .day[data-count="0"] {
+            fill: #666;
+        }
+
+    }
+
     .intro {
 
         position: relative;

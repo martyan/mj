@@ -22,6 +22,7 @@ import nextLogo from '../images/nextjs.svg'
 import surfImg from '../images/surf.svg'
 import mj from '../images/mj_white.svg'
 import './index.scss'
+import GitHubGraph from '../components/GitHubGraph'
 
 const IndexPage = () => (
     <div className="martinjuzl">
@@ -125,6 +126,9 @@ const IndexPage = () => (
                                 github.com/<b>martyan</b>
                             </a>
                         </h2>
+
+                        <GitHubGraph />
+
                         <p>
                             Check{' '}
                             <Link
