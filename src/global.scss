@@ -19,3 +19,13 @@ button {
     }
 
 }
+
+.tablet {
+
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: initial;
+    }
+
+}

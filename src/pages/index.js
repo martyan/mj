@@ -7,6 +7,7 @@ import ReactGA from 'react-ga'
 import SEO from '../components/seo'
 
 import githubLogo from '../images/github.svg'
+import githubLogoDark from '../images/github_dark.svg'
 import entrydoLogo from '../images/entrydo.svg'
 import reactLogo from '../images/react.svg'
 import reduxLogo from '../images/redux.svg'
@@ -20,6 +21,7 @@ import firebaseLogo from '../images/firebase.svg'
 import nextLogo from '../images/nextjs.svg'
 import psLogo from '../images/ps.svg'
 import aiLogo from '../images/ai.svg'
+import nhlgramLogo from '../images/nhlgram.svg'
 
 import surfImg from '../images/surf.svg'
 import mj from '../images/mj_white.svg'
@@ -30,7 +32,7 @@ const IndexPage = () => (
     <div className="martinjuzl">
         <SEO
             title="Martin Juzl | Front-end developer"
-            keywords={[`martin`, `juzl`, `front-end`, `developer`, `entrydo`, `github`, `react`, `redux`]}
+            keywords={[`martin`, `juzl`, `front-end`, `developer`, `nhlgram`, `github`, `react`, `redux`]}
         />
 
         <section className="intro">
@@ -187,6 +189,46 @@ const IndexPage = () => (
         </Fade>
 
         <Fade bottom>
+            <section className="nhlgram">
+                <a
+                    className="logo"
+                    href="https://nhlgram.com"
+                    target="_blank"
+                    onClick={() =>
+                        ReactGA.event({
+                            category: 'User',
+                            action: 'Clicked on NHLgram'
+                        })
+                    }
+                >
+                    <img src={nhlgramLogo} alt="NHLgram" />
+                </a>
+                <div className="desc">
+                    <p>
+                        <a href="https://nhlgram.com">
+                            <b>NHLgram</b>
+                        </a>
+                        <br />
+                        <span>video feed of current NHL season</span>
+                        <a
+                            className="github"
+                            href="https://github.com/martyan/nhlgram"
+                            target="_blank"
+                            onClick={() =>
+                                ReactGA.event({
+                                    category: 'User',
+                                    action: 'Clicked on NHLgram github'
+                                })
+                            }
+                        >
+                            <img src={githubLogoDark} alt="GitHub" />
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </Fade>
+
+        {/*<Fade bottom>
             <section className="entrydo">
                 <a
                     className="logo"
@@ -215,7 +257,7 @@ const IndexPage = () => (
                     </p>
                 </div>
             </section>
-        </Fade>
+        </Fade>*/}
 
         <Fade bottom>
             <section className="get-in-touch">

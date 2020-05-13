@@ -125,7 +125,7 @@
             margin: 0;
             padding: 0 15px;
             font-weight: 400;
-            line-height: 250%;
+            line-height: 200%;
             font-size: 1.25em;
             text-align: center;
 
@@ -347,6 +347,102 @@
 
                 }
 
+            }
+
+        }
+
+    }
+
+    .nhlgram {
+
+        margin-bottom: 200px;
+        text-align: center;
+        padding: 0;
+
+        ::selection {
+            background: #efefef;
+        }
+
+        @media (min-width: $tablet) {
+            padding: 10vh 0;
+        }
+
+        .logo {
+
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            margin: 0 auto;
+
+            @media (min-width: $tablet) {
+                max-width: 140px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .desc {
+
+            padding: 0 15px;
+
+            a {
+
+                color: inherit;
+                font-size: 1.1em;
+                font-weight: 300;
+                margin-bottom: 30px;
+                border-bottom: 3px solid transparent;
+                text-decoration: none;
+                transition: .2s ease;
+
+                @media (min-width: $desktop) {
+                    font-size: 1.5em;
+                }
+
+                &:hover {
+                    border-color: #444;
+                }
+
+            }
+
+            .github {
+                display: block;
+                width: 22px;
+                margin: 10px auto;
+                border-color: transparent !important;
+                opacity: .3;
+                transition: .2s ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                @media (min-width: $tablet) {
+                    width: 32px;
+                }
+            }
+
+            p {
+
+                color: #444;
+                font-weight: 300;
+                font-size: 1.1em;
+                margin-bottom: 30px;
+                line-height: 180%;
+
+                @media (min-width: $tablet) {
+                    font-size: 1.5em;
+                    line-height: 220%;
+                }
+
+            }
+
+            b {
+                font-size: 1.05em;
+                margin: 0 2px;
             }
 
         }
