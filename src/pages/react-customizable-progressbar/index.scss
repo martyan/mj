@@ -2,11 +2,11 @@
 
 .rcp-examples {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $serif;
 
     .header {
 
-        font-family: 'Roboto Slab', serif;
+        font-family: $sansSerif;
         padding: 0 15px;
         font-weight: 300;
         color: #222;
