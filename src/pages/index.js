@@ -24,9 +24,8 @@ import aiLogo from '../images/ai.svg'
 import nhlgramLogo from '../images/nhlgram.svg'
 
 import surfImg from '../images/surf.svg'
-import mj from '../images/mj_white.svg'
-import './index.scss'
 import GitHubGraph from '../components/GitHubGraph'
+import './index.scss'
 
 const IndexPage = () => (
     <div className="martinjuzl">

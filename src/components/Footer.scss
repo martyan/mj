@@ -2,7 +2,7 @@
 
 .footer {
 
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $sansSerif;
     padding: 25px;
     text-align: right;
 
@@ -10,17 +10,14 @@
         color: #bbb;
         font-size: .9em;
         font-weight: 100;
-        margin-right: 5px;
+        margin-right: 2px;
     }
 
     a {
-
         display: inline-block;
-
-        img {
-            width: 110px;
-        }
-
+        font-family: $serif;
+        text-decoration: none;
+        color: #999;
     }
 
 }
