@@ -8,7 +8,12 @@ import SEO from '../components/seo'
 
 import githubLogo from '../images/github.svg'
 import githubLogoDark from '../images/github_dark.svg'
+
 import entrydoLogo from '../images/entrydo.svg'
+import skejtparkyLogo from '../images/skejtparky.svg'
+import dailyNinjaLogo from '../images/dailyninja.svg'
+import nhlgramLogo from '../images/nhlgram.svg'
+
 import reactLogo from '../images/react.svg'
 import reduxLogo from '../images/redux.svg'
 import htmlLogo from '../images/html.svg'
@@ -21,7 +26,6 @@ import firebaseLogo from '../images/firebase.svg'
 import nextLogo from '../images/nextjs.svg'
 import psLogo from '../images/ps.svg'
 import aiLogo from '../images/ai.svg'
-import nhlgramLogo from '../images/nhlgram.svg'
 
 import surfImg from '../images/surf.svg'
 import GitHubGraph from '../components/GitHubGraph'
@@ -70,7 +74,7 @@ const IndexPage = () => (
         <Fade bottom>
             <section className="stack">
                 <h2 className="text">
-                    <span>My favorite technologies include</span>
+                    <span>My favorite technologies are</span>
                     <span className="mobile">
                         <br />
                     </span>
@@ -188,6 +192,65 @@ const IndexPage = () => (
         </Fade>
 
         <Fade bottom>
+            <section className="skejtparky">
+                <a
+                    className="logo"
+                    href="https://skejtparky.cz"
+                    target="_blank"
+                    onClick={() =>
+                        ReactGA.event({
+                            category: 'User',
+                            action: 'Clicked on Skejtparky'
+                        })
+                    }
+                >
+                    <img src={skejtparkyLogo} alt="Skejtparky" />
+                </a>
+                <div className="desc">
+                    <p>
+                        <span>Find skateparks, pumptracks and street spots in your area</span>
+                        <a
+                            className="github"
+                            href="https://github.com/martyan/skejtparky"
+                            target="_blank"
+                            onClick={() =>
+                                ReactGA.event({
+                                    category: 'User',
+                                    action: 'Clicked on NHLgram github'
+                                })
+                            }
+                        >
+                            <img src={githubLogoDark} alt="GitHub" />
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </Fade>
+
+        <Fade bottom>
+            <section className="daily-ninja">
+                <div className="inner">
+                    <a
+                        className="logo"
+                        href="https://daily-ninja.com"
+                        target="_blank"
+                        onClick={() =>
+                            ReactGA.event({
+                                category: 'User',
+                                action: 'Clicked on Daily Ninja'
+                            })
+                        }
+                    >
+                        <img src={dailyNinjaLogo} alt="Daily Ninja" />
+                    </a>
+                    <div className="desc">
+                        <p>Fresh slices of news every day</p>
+                    </div>
+                </div>
+            </section>
+        </Fade>
+
+        <Fade bottom>
             <section className="nhlgram">
                 <a
                     className="logo"
@@ -208,7 +271,7 @@ const IndexPage = () => (
                             <b>NHLgram</b>
                         </a>
                         <br />
-                        <span>video feed of current NHL season</span>
+                        <span>Video feed of current NHL season</span>
                         <a
                             className="github"
                             href="https://github.com/martyan/nhlgram"
@@ -292,7 +355,7 @@ const IndexPage = () => (
                                 <img src={mj} alt="mj" />
                             </a>
                         </p>*/}
-                        <p className="code">
+                        {/*<p className="code">
                             see the{' '}
                             <a
                                 href="https://github.com/martyan/martinjuzl.com"
@@ -307,7 +370,7 @@ const IndexPage = () => (
                                 source code
                             </a>{' '}
                             if interested
-                        </p>
+                        </p>*/}
                     </div>
                 </div>
             </section>
