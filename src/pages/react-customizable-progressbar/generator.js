@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
-import Generator from '../../components/Generator'
+import Generator from '../../components/RCP/Generator'
 import Footer from '../../components/Footer'
 
 import SEO from '../../components/seo'
