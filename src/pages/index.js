@@ -141,7 +141,20 @@ const IndexPage = () => (
                         <GitHubGraph />
 
                         <p>
-                            Check{' '}
+                            <a
+                                href="https://github.com/martyan/react-customizable-progressbar"
+                                target="_blank"
+                                onClick={() =>
+                                    ReactGA.event({
+                                        category: 'User',
+                                        action: 'Clicked on react-customizable-progressbar'
+                                    })
+                                }
+                            >
+                                react-customizable-progressbar
+                            </a>{' '}
+                            <span className="middot">&middot;</span>{' '}
+                            check{' '}
                             <Link
                                 to="/react-customizable-progressbar"
                                 onClick={() =>
@@ -151,7 +164,7 @@ const IndexPage = () => (
                                     })
                                 }
                             >
-                                Examples
+                                examples
                             </Link>{' '}
                             or play around{' '}
                             <span className="mobile">
@@ -167,24 +180,36 @@ const IndexPage = () => (
                                     })
                                 }
                             >
-                                Generator
-                            </Link>{' '}
-                            of{' '}
-                            <span className="mobile">
-                                <br />
-                            </span>{' '}
+                                generator
+                            </Link>
+                        </p>
+
+                        <p>
                             <a
-                                href="https://github.com/martyan/react-customizable-progressbar"
+                                href="https://github.com/martyan/react-surfer-slider"
                                 target="_blank"
                                 onClick={() =>
                                     ReactGA.event({
                                         category: 'User',
-                                        action: 'Clicked on react-customizable-progressbar'
+                                        action: 'Clicked on react-surfer-slider'
                                     })
                                 }
                             >
-                                react-customizable-progressbar
-                            </a>
+                                react-surfer-slider
+                            </a>{' '}
+                            <span className="middot">&middot;</span>{' '}
+                            see{' '}
+                            <Link
+                                to="/react-surfer-slider"
+                                onClick={() =>
+                                    ReactGA.event({
+                                        category: 'User',
+                                        action: 'Clicked on react-surfer-slider examples'
+                                    })
+                                }
+                            >
+                                examples
+                            </Link>
                         </p>
                     </div>
                 </div>
@@ -209,7 +234,7 @@ const IndexPage = () => (
                 <div className="desc">
                     <p>
                         <span>Find skateparks, pumptracks and street spots in your area</span>
-                        <a
+                        {/*<a
                             className="github"
                             href="https://github.com/martyan/skejtparky"
                             target="_blank"
@@ -221,7 +246,7 @@ const IndexPage = () => (
                             }
                         >
                             <img src={githubLogoDark} alt="GitHub" />
-                        </a>
+                        </a>*/}
                     </p>
                 </div>
             </section>

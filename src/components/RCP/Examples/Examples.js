@@ -18,7 +18,7 @@ class Examples extends Component {
         const { progress } = this.state
 
         return (
-            <div className="examples">
+            <>
                 <div className="slider">
                     <div className="desc">Progress</div>
                     <input
@@ -43,7 +43,7 @@ class Examples extends Component {
                     <CustomIndicator progress={progress} />
                     <Countdown progress={progress} />
                 </div>
-            </div>
+            </>
         )
     }
 

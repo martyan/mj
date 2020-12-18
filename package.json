@@ -46,6 +46,7 @@
         "react-helmet": "^5.2.0",
         "react-prism": "^4.3.2",
         "react-reveal": "^1.2.2",
+        "react-surfer-slider": "^0.1.0",
         "react-text-loop": "^2.3.0",
         "rxjs": "5.3.0"
     },
