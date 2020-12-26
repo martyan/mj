@@ -3,6 +3,7 @@
 @import '../../variables';
 
 .rss-examples {
+  min-height: 100vh;
 
   .link {
     font-family: $sansSerif;
@@ -18,27 +19,10 @@
     }
   }
 
-  .minimal {
-
-    margin-top: 50px;
-    max-width: 640px;
-    padding: 0 15px;
-
-    .RSS {
-      font-family: 'Roboto Slab', sans-serif;
-      font-size: 16px;
-      line-height: 140%;
-
-      @media (min-width: 420px) {
-        font-size: 18px;
-      }
-    }
-
-  }
-
   .basic {
 
     margin-top: 50px;
+    margin-bottom: 200px;
     max-width: 640px;
     padding: 0 15px;
 
