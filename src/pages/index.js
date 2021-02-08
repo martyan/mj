@@ -13,6 +13,7 @@ import entrydoLogo from '../images/entrydo.svg'
 import skejtparkyLogo from '../images/skejtparky.svg'
 import dailyNinjaLogo from '../images/dailyninja.svg'
 import nhlgramLogo from '../images/nhlgram.svg'
+import cesivNHLLogo from '../images/cesivnhl.svg'
 
 import reactLogo from '../images/react.svg'
 import reduxLogo from '../images/redux.svg'
@@ -234,19 +235,6 @@ const IndexPage = () => (
                 <div className="desc">
                     <p>
                         <span>Find skateparks, pumptracks and street spots in your area</span>
-                        {/*<a
-                            className="github"
-                            href="https://github.com/martyan/skejtparky"
-                            target="_blank"
-                            onClick={() =>
-                                ReactGA.event({
-                                    category: 'User',
-                                    action: 'Clicked on NHLgram github'
-                                })
-                            }
-                        >
-                            <img src={githubLogoDark} alt="GitHub" />
-                        </a>*/}
                     </p>
                 </div>
             </section>
@@ -277,7 +265,7 @@ const IndexPage = () => (
 
         <Fade bottom>
             <section className="nhlgram">
-                <a
+                {/*<a
                     className="logo"
                     href="https://nhlgram.com"
                     target="_blank"
@@ -289,15 +277,24 @@ const IndexPage = () => (
                     }
                 >
                     <img src={nhlgramLogo} alt="NHLgram" />
+                </a>*/}
+                <a
+                    className="logo"
+                    href="https://cesivnhl.cz"
+                    target="_blank"
+                    onClick={() =>
+                        ReactGA.event({
+                            category: 'User',
+                            action: 'Clicked on Češi v NHL'
+                        })
+                    }
+                >
+                    <img src={cesivNHLLogo} alt="Češi v NHL" />
                 </a>
                 <div className="desc">
                     <p>
-                        <a href="https://nhlgram.com">
-                            <b>NHLgram</b>
-                        </a>
-                        <br />
-                        <span>Video feed of current NHL season</span>
-                        <a
+                        <span>Video feed of Czech players in NHL</span>
+                        {/*<a
                             className="github"
                             href="https://github.com/martyan/nhlgram"
                             target="_blank"
@@ -309,7 +306,7 @@ const IndexPage = () => (
                             }
                         >
                             <img src={githubLogoDark} alt="GitHub" />
-                        </a>
+                        </a>*/}
                     </p>
                 </div>
             </section>
