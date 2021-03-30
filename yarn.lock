@@ -11657,10 +11657,10 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-surfer-slider@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-surfer-slider/-/react-surfer-slider-0.1.0.tgz#5c149a12371963db39dd3f5f2adc4ea7607872b8"
-  integrity sha512-FKRwESPrgoalviyEoK5saKLUSnYZVDOJnTM3CnNJKxzBiE7gj0HFvLQbKXw0DvnFq500RaIMU3rEhbL4OwiqQA==
+react-surfer-slider@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-surfer-slider/-/react-surfer-slider-0.2.1.tgz#a1ca178d43fb0b8658ecb7a223dd6d9df2195f94"
+  integrity sha512-mQUX0iLSAp25XNJhsGAyx56QxFJNpUyJMSfPPCxYpIFbMjLyqpXQZhHYkQ5fb0JAtg1IhQ8pnHCe7CW3LHuuKQ==
 
 react-text-loop@^2.3.0:
   version "2.3.0"
@@ -14837,9 +14837,9 @@ xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
-  integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
 
 yaeti@^0.0.6:
   version "0.0.6"
